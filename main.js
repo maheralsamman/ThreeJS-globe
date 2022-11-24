@@ -58,14 +58,14 @@ scene.add(group);
 // adding stars
 const starGeometry = new THREE.BufferGeometry();
 const starMaterial = new THREE.PointsMaterial({
-  color: 0xFFFFFF,
+  color: 0x808080,
 });
 
 const starVertices = [];
 for (let i = 0; i < 10000; i++) {
   const x = (Math.random() - 0.5) * 2000;
   const y = (Math.random() - 0.5) * 2000;
-  const z = -Math.random() * 3000;
+  const z = -Math.random() * 10000;
   starVertices.push(x, y, z);
 }
 
